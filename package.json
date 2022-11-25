@@ -1,18 +1,30 @@
 {
-  "name": "alten-download-file",
-  "version": "0.0.1",
+  "name": "alten-load-file",
+  "version": "0.0.2",
   "description": "Contains two functions that help with downloading a file.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build",
+    "build": "tsc",
     "dev": "tsc -w"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "@babel/core": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "typescript": "^4.8.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alten-fullstack-expertise/alten-download-file"
   },
   "files": [
-    "./index.js"
+    "index.js",
+    "index.d.ts",
+    "index.d.ts.map"
   ]
 }

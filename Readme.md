@@ -1,4 +1,4 @@
-# alten-download-file
+# alten-load-file
 
 This package was created to make downloading files easy.
 
@@ -13,7 +13,7 @@ If an error occurs, the last optional argument is a callback function that recei
 If the download is successful, result will be true, otherwise false.
 
 ```ts
-import {downloadFileAndSave} from "alten-download-file";
+import {downloadFileAndSave} from "alten-load-file";
 
 const result = await downloadFileAndSave(
     fetch("https://jsonplaceholder.typicode.com/todos/1"),
@@ -31,7 +31,7 @@ The file that is saved to the pc will be named: test.json.
 If an error occurs, the last optional argument is a callback function that receives the thrown error.
 
 ```ts
-import {saveToPc} from "alten-download-file";
+import {saveToPc} from "alten-load-file";
 
 const f = await fetch("https://jsonplaceholder.typicode.com/todo/1");
 const b = await f.blob();
